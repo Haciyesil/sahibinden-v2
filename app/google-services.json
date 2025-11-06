@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1069321963073",
+    "project_id": "mobilcihazlarfinal-13dc7",
+    "storage_bucket": "mobilcihazlarfinal-13dc7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069321963073:android:582befd0ae6f7c095528c0",
+        "android_client_info": {
+          "package_name": "com.haco.afinal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7ajFifnotg9JinAP0jatflLIFaX7_3tc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            android:src="@android:drawable/ic_menu_revert" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="İlan Ver"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/sky_blue">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <Button
+                android:id="@+id/resimSecButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resim Seç"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/black"/>
+
+            <ImageView
+                android:id="@+id/selectedImage"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/markaEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Marka"
+                android:layout_marginBottom="8dp"
+                android:padding="12dp"
+                android:background="@android:drawable/editbox_background"/>
+
+            <EditText
+                android:id="@+id/modelEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Model"
+                android:layout_marginBottom="8dp"
+                android:padding="12dp"
+                android:background="@android:drawable/editbox_background"/>
+
+            <EditText
+                android:id="@+id/yilEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Yıl"
+                android:inputType="number"
+                android:layout_marginBottom="8dp"
+                android:padding="12dp"
+                android:background="@android:drawable/editbox_background"/>
+
+            <EditText
+                android:id="@+id/kmEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="KM"
+                android:inputType="number"
+                android:layout_marginBottom="8dp"
+                android:padding="12dp"
+                android:background="@android:drawable/editbox_background"/>
+
+            <EditText
+                android:id="@+id/fiyatEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fiyat"
+                android:inputType="number"
+                android:layout_marginBottom="16dp"
+                android:padding="12dp"
+                android:background="@android:drawable/editbox_background"/>
+
+            <Button
+                android:id="@+id/ilanVerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="İlan Ver"
+                android:backgroundTint="@color/black"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
